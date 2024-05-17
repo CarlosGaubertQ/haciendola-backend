@@ -1,7 +1,14 @@
 import Sequelize from "sequelize";
 import 'dotenv/config'
 
-const sequelize = new Sequelize('haciendola', 'mysql', process.env.PASS,{
+export const sequelize = new Sequelize(
+    'haciendola', 
+    'root',
+    process.env.PASS,
+    {
+        host: 'localhost',
+        dialect: 'mysql'
+    }
 
-})
+)
 
