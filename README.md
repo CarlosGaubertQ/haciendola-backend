@@ -13,7 +13,7 @@ En la base de datos mysql debemos acceder mediante la terminal con el comando
 mysql -u root -p 
 ```
 
-Nos pedira nuestra contraseña la escribimos, luego crearemos una base de datos con el nombre `haciendola`, accederemos a ella y mediante el archivo database_dump.sql
+Nos pedira nuestra contraseña la escribimos, luego crearemos una base de datos con el nombre `haciendola`, accederemos a ella y mediante el archivo database_dump.sql que se encuentra en el siguiente esquema:
 
 ```
 node_modules/
@@ -35,7 +35,7 @@ package.json
 README.md
 ```
 
-Copiaremos el contenido del archivo dentro de la base de datos
+Copiaremos el contenido del archivo dentro de la base de datos.
 
 
 Lo siguente sera crear un archivo .env en la carpeta en donde este alojado el Backend con la siguiente estructura:
@@ -44,7 +44,7 @@ Lo siguente sera crear un archivo .env en la carpeta en donde este alojado el Ba
 PASS=**************
 ```
 
-Se debe reemplazar el valor de la variable `PASS` con contraseña de la base de datos mysql local.
+Se debe reemplazar el valor de la variable `PASS` con la contraseña de la base de datos mysql local.
 
 Ahora procedemos a utilizar el siguiente comando:
 
@@ -59,6 +59,6 @@ npm run dev
 ```
 
 Con esto tendremos el Backend/Servidor corriendo a la espera de una solicitud por parte del sistema web. 
-Por defecto se esta usando el puerto `3000` para poder usar este como acceso al Backend, asi no habra problemas con respecto al Frontend y sus solicitudes.
+Por defecto se esta usando el puerto `3000`.
 
 ![alt text](image.png)
