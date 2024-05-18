@@ -37,7 +37,7 @@ README.md
 
 Copiaremos el contenido del archivo dentro de la base de datos.
 
-
+## Variables env
 Lo siguente sera crear un archivo .env en la carpeta en donde este alojado el Backend con la siguiente estructura:
 
 ```
@@ -45,6 +45,8 @@ PASS=**************
 ```
 
 Se debe reemplazar el valor de la variable `PASS` con la contraseña de la base de datos mysql local.
+
+## Instalación de dependencias
 
 Ahora procedemos a utilizar el siguiente comando:
 
@@ -62,3 +64,22 @@ Con esto tendremos el Backend/Servidor corriendo a la espera de una solicitud po
 Por defecto se esta usando el puerto `3000`.
 
 ![alt text](image.png)
+
+## Documentación endpoint
+
+Si se necesita se puede ver Documentación de los endpoint creado mediante los archivos:
+
+- thunder-collection_Productos.json
+- thunder-collection_Usuarios.json
+
+Estas deben ser importadas en la extensión de Vscode thunder client 
+
+![alt text](image-1.png)
+
+mediante la interfaz de la extension se pueden importar los archivos
+
+![alt text](image-2.png)
+
+Cualquier otra consulta escribir al correo:
+---
+carlosgaubertquijada@gmail.com

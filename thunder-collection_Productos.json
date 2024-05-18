@@ -1,0 +1,86 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Productos",
+    "collectionId": "2e44f72c-c80d-4f44-afad-b4e69e6e8637",
+    "dateExported": "2024-05-18T02:49:28.691Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d233a503-8349-4854-8259-84d1b939e072",
+            "colId": "2e44f72c-c80d-4f44-afad-b4e69e6e8637",
+            "containerId": "",
+            "name": "Get Productos",
+            "url": "http://localhost:3000/product",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-17T01:33:52.481Z",
+            "modified": "2024-05-17T01:33:52.481Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Handle\": \"prueba 1-1\",\n  \"Title\": \"prueba 1-2\",\n  \"Description\": \"prueba 1-3\",\n  \"SKU\": 14,\n  \"Grams\": 15,\n  \"Stock\": 16,\n  \"Price\": \"1.7\",\n  \"Compare_Price\": \"1.8\",\n  \"Barcode\": 19\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "69de6b01-449c-4e93-b685-dfe6d0fdaa4e",
+            "colId": "2e44f72c-c80d-4f44-afad-b4e69e6e8637",
+            "containerId": "",
+            "name": "Crear productos",
+            "url": "http://localhost:3000/product",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-17T01:49:44.067Z",
+            "modified": "2024-05-17T22:20:04.467Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Handle\": \"prueba1-1\",\n  \"Title\": \"prueba 1-2\",\n  \"Description\": \"prueba 1-3\",\n  \"SKU\": 14,\n  \"Grams\": 15,\n  \"Stock\": 16,\n  \"Price\": 1.7,\n  \"Compare_Price\": 1.8,\n  \"Barcode\": 19\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6df9c7cb-6376-4731-b5e6-c2ad9ce58abb",
+            "colId": "2e44f72c-c80d-4f44-afad-b4e69e6e8637",
+            "containerId": "",
+            "name": "Update Productos",
+            "url": "http://localhost:3000/product/",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-05-17T01:57:46.608Z",
+            "modified": "2024-05-17T01:57:46.608Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Handle\": \"prueba 1-1\",\n  \"Title\": \"prueba 1-3\",\n  \"Description\": \"prueba 1-4\",\n  \"SKU\": 15,\n  \"Grams\": 16,\n  \"Stock\": 17,\n  \"Price\": \"1.8\",\n  \"Compare_Price\": \"1.9\",\n  \"Barcode\": 10\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "43624eba-d4f0-4451-84ff-2f167f62408e",
+            "colId": "2e44f72c-c80d-4f44-afad-b4e69e6e8637",
+            "containerId": "",
+            "name": "http://localhost:3000/product/prueba-1-1",
+            "url": "http://localhost:3000/product/prueba-1-1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-05-17T02:14:32.627Z",
+            "modified": "2024-05-17T02:14:32.627Z",
+            "headers": []
+        },
+        {
+            "_id": "05b294d1-6cb0-4b34-a55e-cba037f27fee",
+            "colId": "2e44f72c-c80d-4f44-afad-b4e69e6e8637",
+            "containerId": "",
+            "name": "Get Producto",
+            "url": "http://localhost:3000/product/prueba-1-1",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-05-17T02:27:23.932Z",
+            "modified": "2024-05-17T02:27:23.932Z",
+            "headers": []
+        }
+    ],
+    "ref": "fe1UOb3gTXT8jC4f6w_93uk4xhp9AZCRWqFcNltnKmEYdOXSKPfSLipNvSs59egm1iyO0Y66eUWtsEpZyuGczg"
+}
