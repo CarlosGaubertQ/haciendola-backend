@@ -1,9 +1,44 @@
+# Backend Haciendola - prueba tecnica
+
 Para poder hacer uso del sistema, debemos tener instalado:
 
 - Node js
 - Mysql 
 
-Lo primero que debemos hacer es crear un archivo .env en la carpeta en donde este alojado el Backend con la siguiente estructura:
+## Preparación de la base de datos 
+
+En la base de datos mysql debemos acceder mediante la terminal con el comando 
+
+```
+mysql -u root -p 
+```
+
+Nos pedira nuestra contraseña la escribimos, luego crearemos una base de datos con el nombre `haciendola`, accederemos a ella y mediante el archivo database_dump.sql
+
+```
+node_modules/
+src/
+├── controllers/
+├── database/
+│   ├── database_dump.sql  <---
+│   └── database.js
+├── models/
+└── routes/
+    ├── app.js
+    └── index.js
+.env
+.gitignore
+dump.sql
+image.png
+package-lock.json
+package.json
+README.md
+```
+
+Copiaremos el contenido del archivo dentro de la base de datos
+
+
+Lo siguente sera crear un archivo .env en la carpeta en donde este alojado el Backend con la siguiente estructura:
 
 ```
 PASS=**************

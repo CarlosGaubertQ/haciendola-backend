@@ -1,3 +1,20 @@
+
+
+DROP TABLE IF EXISTS `product`;
+
+CREATE TABLE Product (
+    Handle VARCHAR(255) NOT NULL,
+    Title VARCHAR(255) NOT NULL,
+    Description TEXT NOT NULL,
+    SKU BIGINT NOT NULL,
+    Grams FLOAT NOT NULL,
+    Stock INT NOT NULL,
+    Price DECIMAL(10, 2) NOT NULL,
+    Compare_Price DECIMAL(10, 2) NOT NULL,
+    Barcode BIGINT NOT NULL,
+    PRIMARY KEY (Handle)
+);
+
 INSERT INTO Product VALUES('cola-glitter-23-grs','COLA GLITTER 23 GRS','<p><strong>Características:</strong></p>
 <ul>
 <li>Para hacer pegaduras, contornos, decorar y pintar sobre papel, papel cartón y cartulina.</li>
@@ -303,7 +320,9 @@ Sami, el pequeño pingüino, descubre que el lugar donde habita se está derriti
 INSERT INTO Product VALUES('pl-kiki-cocina-un-delicioso-pastal','PL-KIKI COCINA UN DELICIOSO PASTEL','<strong>Autor:</strong> Libertad S.A.<br><strong>Edad:</strong> +3<br><strong>Tipo Encuadernado:</strong> Rústico<br><strong>Tipo Tapa:</strong> <span>Cartón</span><br><strong>Papel Interior:</strong> Bond<br><strong>Ancho:</strong> 21<br><strong>Alto:</strong> 27,5<br><br><a href="https://libertad-sa.myshopify.com/products/coleccion-pl-guardianes-del-planeta-10-titulos" style="background-color: #00567b; border: none;" class="action_button cc-button">Ver colección completa</a>
 <h5>Reseña</h5>
 Sami, el pequeño pingüino, descubre que el lugar donde habita se está derritiendo y que los alimentos comienzan a escasear. Junto a sus padres y amigos, que también están muy preocupados por perder su hogar, descubre que la causa de este fenómeno es el cambio climático que ocurre en nuestro planeta.',304424482,100.0,556,3141,3490,0);
-INSERT INTO Product VALUES('pl-frosty-cobra-vida','PL-FROSTY COBRA VIDA','<strong>Autor:</strong> Libertad S.A.<br><strong>Edad:</strong> +3<br><strong>Tipo Encuadernado:</strong> Rústico<br><strong>Tipo Tapa:</strong> <span>Cartón</span><br><strong>Papel Interior:</strong> Bond<br><strong>Ancho:</strong> 21<br><strong>Alto:</strong> 27,5<br><br><a href="https://libertad-sa.myshopify.com/products/coleccion-pl-guardianes-del-planeta-10-titulos" style="background-color: #00567b; border: none;" class="action_button cc-button">Ver colección completa</a><h5>Reseña</h5>Sami, el pequeño pingüino, descubre que el lugar donde habita se está derritiendo y que los alimentos comienzan a escasear. Junto a sus padres y amigos, que también están muy preocupados por perder su hogar, descubre que la causa de este fenómeno es el cambio climático que ocurre en nuestro planeta.',304424481,100.0,553,3141,3490,0);
+INSERT INTO Product VALUES('pl-frosty-cobra-vida','PL-FROSTY COBRA VIDA','<strong>Autor:</strong> Libertad S.A.<br><strong>Edad:</strong> +3<br><strong>Tipo Encuadernado:</strong> Rústico<br><strong>Tipo Tapa:</strong> <span>Cartón</span><br><strong>Papel Interior:</strong> Bond<br><strong>Ancho:</strong> 21<br><strong>Alto:</strong> 27,5<br><br><a href="https://libertad-sa.myshopify.com/products/coleccion-pl-guardianes-del-planeta-10-titulos" style="background-color: #00567b; border: none;" class="action_button cc-button">Ver colección completa</a>
+<h5>Reseña</h5>
+Sami, el pequeño pingüino, descubre que el lugar donde habita se está derritiendo y que los alimentos comienzan a escasear. Junto a sus padres y amigos, que también están muy preocupados por perder su hogar, descubre que la causa de este fenómeno es el cambio climático que ocurre en nuestro planeta.',304424481,100.0,553,3141,3490,0);
 INSERT INTO Product VALUES('huesos-y-huellas-dinosaurios','HUESOS Y HUELLAS DINOSAURIOS','<strong>Autor:</strong> Carmen Martul Hernández<br><strong>Edad:</strong> +7<br><strong>Tipo Encuadernado:</strong> Tapa Dura<br><strong>Tipo Tapa:</strong> <span>Cartón</span><br><strong>Papel Interior:</strong> Couche<br><strong>Ancho:</strong> 20<br><strong>Alto:</strong> 27<br><br><a href="https://libertad-sa.myshopify.com/products/coleccion-huesos-y-huellas-2-titulos" style="background-color: #00567b; border: none;" class="action_button cc-button">Ver colección completa</a>
 <h5>Reseña</h5>
 <p>Hace muchos millones de años, sobre este mismo planeta que ahora habitamos, vivieron unos animales que siempre han fascinado al ser humano por su tamaño, características y costumbres, algunas de ellas todavía no muy bien conocidas. Nos referimos a los dinosaurios y otros reptiles prehistóricos. ¿Cómo reconocer los que te proponemos en el libro por su esqueleto y sus restos fósiles? Los exploradores te darán diferentes pistas sobre la época en la que vivieron, su tamaño, su peso, su alimentación y sus costumbres. Y si aún tienes dudas... ¡pasa a la página siguiente! Te develamos el animal prehistórico secreto y resolveremos todas las pistas intrigantes con las que descubrirás muchos datos curiosos. ¿Juegas a adivinar qué dinosaurio se esconde?</p>',304425523,100.0,584,8631,9590,9788466239066);
@@ -457,7 +476,12 @@ INSERT INTO Product VALUES('stencil-insectos-16x5cm','STENCIL INSECTOS 16X5CM','
 <li><span>La plantilla se fija con cinta crepé donde se desea pintar, que puede ser cualquier superficie lisa, como madera, MDF, tela, vidrio, papel, etc.</span></li>
 <li><span>Se utiliza pincel con muy poca pintura para que no borre el diseño, en movimientos circulares. </span></li>
 </ul>',10870857701,100.0,21,1251,1390,7891153070308);
-INSERT INTO Product VALUES('stencil-ginger-16x5cm','STENCIL GINGER 16X5CM','<p><strong>Características:</strong></p><ul><li>La plantilla es una placa de acetato recortada con diversos tipos de diseños.</li></ul><h5>Modo de Uso</h5><p><span>La plantilla se fija con cinta crepé donde se desea pintar, que puede ser cualquier superficie lisa, como madera, MDF, tela, vidrio, papel, etc. Se utiliza pincel con muy poca pintura para que no borre el diseño, en movimientos circulares. </span></p>',10870857601,100.0,25,1251,1390,7891153068398);
+INSERT INTO Product VALUES('stencil-ginger-16x5cm','STENCIL GINGER 16X5CM','<p><strong>Características:</strong></p>
+<ul>
+<li>La plantilla es una placa de acetato recortada con diversos tipos de diseños.</li>
+</ul>
+<h5>Modo de Uso</h5>
+<p><span>La plantilla se fija con cinta crepé donde se desea pintar, que puede ser cualquier superficie lisa, como madera, MDF, tela, vidrio, papel, etc. Se utiliza pincel con muy poca pintura para que no borre el diseño, en movimientos circulares. </span></p>',10870857601,100.0,25,1251,1390,7891153068398);
 INSERT INTO Product VALUES('stencil-coronas-16x5cm','STENCIL CORONAS 16X5CM','<p><strong>Características:</strong></p>
 <ul>
 <li>La plantilla es una placa de acetato recortada con diversos tipos de diseños.</li>
@@ -1533,8 +1557,11 @@ INSERT INTO Product VALUES('barniz-vitral-i250-ml','BARNIZ VITRAL I250 ML','<p><
 <li>Indicados para vidrio, porcelanas y mayólica, se puede imitar el efecto vitral trabajando con la Pasta Relieve Delineador.</li>
 <li>Solamente para efectos decorativos.</li>
 </ul>',10870113801,100.0,90,14481,16090,7891153006154);
-INSERT INTO Product VALUES('thinner-diluyente-100-ml','THINNER DILUYENTE 100 ML','<p><strong>Características:</strong></p><ul><li>Para dilución de barnices General, Cristal y pinturas duco.</li></ul><br>',10870250501,100.0,571,2961,3290,7891153167107);
-
+INSERT INTO Product VALUES('thinner-diluyente-100-ml','THINNER DILUYENTE 100 ML','<p><strong>Características:</strong></p>
+<ul>
+<li>Para dilución de barnices General, Cristal y pinturas duco.</li>
+</ul>
+<br>',10870250501,100.0,571,2961,3290,7891153167107);
 INSERT INTO Product VALUES('retardador-vitro-150-150-ml','RETARDADOR VITRO 150° 150 ML','<p><strong>Características:</strong></p>
 <ul>
 <li>No tóxico.</li>
@@ -2168,7 +2195,10 @@ INSERT INTO Product VALUES('doodles-y-pasatiempos-para-aprender','DOODLES Y PASA
 <p>Los doodles son dibujos simples de línea negra que se colorean para relajar la mente.</p>
 <p>Pero nuestros ingenuos doodles para niños no solo sirven para rellenar de color, sino que cada página presenta un divertido pasatiempo con el que pasar tardes de lluvia muy entretenidas y que les ayudará a potenciar su capacidad de concentración y de observación: busca parejas, encuentra un objeto igual o diferente, unir puntos, contar cosas....</p>
 <p>¡Pequeños retos para niños de mente inquieta que no tienen tiempo para aburrirse!</p>',300108703,100.0,0,1791,1990,9788466235501);
-INSERT INTO Product VALUES('doodles-y-entretenimientos-para-aprender','DOODLES Y ENTRETENIMIENTOS PARA APRENDER','<strong>Autor:</strong> Libsa<br><strong>Tipo Encuadernado:</strong> Rústico<br><strong>Tipo Tapa:</strong> Cartón<br><strong>Papel Interior:</strong> Bond<br><strong>Ancho:</strong> 21<br><strong>Alto:</strong> 30<br><h5>Reseña</h5><p>El acto espontáneo de dibujar garabatos y luego colorearlos ayuda a mejorar el aprendizaje potenciando la atención y el rendimiento escolar. Por eso, este libro de doodles para niños presenta páginas con simpáticos dibujos de animalitos y decorados infantiles para rellenarlos de color y los acompaña además de entretenimientos y pasatiempos como laberintos, unir puntos, contar, buscar objetos, etc.</p><p>iPequeños retos para niños de mente inquieta que no tienen tiempo para aburrirse!</p>',300108702,100.0,0,1791,1990,9788466235495);
+INSERT INTO Product VALUES('doodles-y-entretenimientos-para-aprender','DOODLES Y ENTRETENIMIENTOS PARA APRENDER','<strong>Autor:</strong> Libsa<br><strong>Tipo Encuadernado:</strong> Rústico<br><strong>Tipo Tapa:</strong> Cartón<br><strong>Papel Interior:</strong> Bond<br><strong>Ancho:</strong> 21<br><strong>Alto:</strong> 30<br>
+<h5>Reseña</h5>
+<p>El acto espontáneo de dibujar garabatos y luego colorearlos ayuda a mejorar el aprendizaje potenciando la atención y el rendimiento escolar. Por eso, este libro de doodles para niños presenta páginas con simpáticos dibujos de animalitos y decorados infantiles para rellenarlos de color y los acompaña además de entretenimientos y pasatiempos como laberintos, unir puntos, contar, buscar objetos, etc.</p>
+<p>iPequeños retos para niños de mente inquieta que no tienen tiempo para aburrirse!</p>',300108702,100.0,0,1791,1990,9788466235495);
 INSERT INTO Product VALUES('doodles-y-juegos-para-aprender','DOODLES Y JUEGOS PARA APRENDER','<strong>Autor:</strong> Libsa<br><strong>Tipo Encuadernado:</strong> Rústico<br><strong>Tipo Tapa:</strong> Cartón<br><strong>Papel Interior:</strong> Bond<br><strong>Ancho:</strong> 21<br><strong>Alto:</strong> 30<br>
 <h5>Reseña</h5>
 <p>Soñar despierto coloreando dibujos es una actividad muy sana para los niños que, al distraer su mente, son capaces de percibir lo importante, mejorar la concentración y adquirir más creatividad.</p>
@@ -2347,3 +2377,23 @@ INSERT INTO Product VALUES('increibles-dinosaurios','INCREÍBLES DINOSAURIOS','<
 <p>Con este libro de increíbles datos e ilustraciones, descubrirás todas las curiosidades y hechos insólitos que siempre quisiste saber sobre los dinosaurios con tan solo levantar las solapas llenas de sorpresas de cada página.</p>
 <p>¡Conviértete en un paleontólogo experto del Triásico, Jurásico y Cretácico tras las huellas de los dinosaurios!</p>',304421374,100.0,1001,13941,15490,9788466232838);
 
+
+
+UNLOCK TABLES;
+
+
+
+DROP TABLE IF EXISTS `user`;
+
+CREATE TABLE `user` (
+  `Username` varchar(255) NOT NULL,
+  `Password` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+LOCK TABLES `user` WRITE;
+
+INSERT INTO `user` VALUES ('prueba','$2a$08$6o8yGPAIICk3g1US..opxOoRQVowPz/8oVFlQOPKN7JOuCQ02/vUu');
+
+UNLOCK TABLES;
