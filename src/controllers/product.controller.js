@@ -26,7 +26,8 @@ export const getProducts = async (req, res) =>{
 
 export const createProduct = async (req, res ) => {
     const {Handle, Title, Description, SKU, Grams, Stock, Price, Compare_Price, Barcode} = req.body
-    console.log(req.body)
+    
+
     try {
         const newProduct = await Product.create({
             'Handle': Handle,
@@ -44,6 +45,7 @@ export const createProduct = async (req, res ) => {
 
         res.send('Create Product')
     } catch (error) {
+        console.log(error)
         return res.status(500).json({message: error.message})
     }
 }
